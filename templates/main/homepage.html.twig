@@ -16,6 +16,13 @@
 		{% endif %}
 	</div>
 
-	<div></div>
+	<table>
+		{% for key,value in myShip %}
+			<tr>
+				<td>{{key}}</td>
+				<td>{{value}}</td>
+			</tr>
+		{% endfor %}
+	</table>
 
 {% endblock %}
