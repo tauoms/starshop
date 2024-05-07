@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{parent()}}
+	New title
+{% endblock %}
+
+{% block body %}
+	<div>
+		Browse through
+		{{ numberOfStarships }}
+		starships.
+
+		{% if numberOfStarships > 400 %}
+			<p>That's a lot of starships!</p>
+		{% endif %}
+	</div>
+
+	<div></div>
+
+{% endblock %}
