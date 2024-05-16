@@ -17,12 +17,26 @@
 	</div>
 
 	<table>
-		{% for key,value in myShip %}
-			<tr>
-				<td>{{key}}</td>
-				<td>{{value}}</td>
-			</tr>
-		{% endfor %}
+		<tr>
+			<th>Property</th>
+			<th>Value</th>
+		</tr>
+		<tr>
+			<td>Name</td>
+			<td>{{ myShip.name }}</td>
+		</tr>
+		<tr>
+			<td>Class</td>
+			<td>{{ myShip.class() }}</td>
+		</tr>
+		<tr>
+			<td>Captain</td>
+			<td>{{ myShip.captain() }}</td>
+		</tr>
+		<tr>
+			<td>Status</td>
+			<td>{{ myShip.status() }}</td>
+		</tr>
 	</table>
 
 {% endblock %}
