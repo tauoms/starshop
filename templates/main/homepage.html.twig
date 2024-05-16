@@ -8,10 +8,10 @@
 {% block body %}
 	<div>
 		Browse through
-		{{ numberOfStarships }}
+		{{ ships|length * 10 }}
 		starships.
 
-		{% if numberOfStarships > 400 %}
+		{% if ships|length > 2 %}
 			<p>That's a lot of starships!</p>
 		{% endif %}
 	</div>
